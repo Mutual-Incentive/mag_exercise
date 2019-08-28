@@ -1,0 +1,9 @@
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug\JINGJING.exe.config
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.csprojResolveAssemblyReference.cache
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.main.resources
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.Properties.Resources.resources
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.csproj.GenerateResource.Cache
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug\JINGJING.exe
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug\JINGJING.pdb
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.exe
+c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.pdb
