@@ -7,3 +7,12 @@ c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug
 c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug\JINGJING.pdb
 c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.exe
 c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.pdb
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\bin\Debug\JINGJING.exe.config
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\obj\Debug\JINGJING.exe
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\obj\Debug\JINGJING.pdb
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\bin\Debug\JINGJING.exe
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\bin\Debug\JINGJING.pdb
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\obj\Debug\JINGJING.csprojResolveAssemblyReference.cache
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\obj\Debug\JINGJING.main.resources
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\obj\Debug\JINGJING.Properties.Resources.resources
+C:\Users\yaowa\Documents\Visual Studio 2013\Projects\jj\JINGJING\obj\Debug\JINGJING.csproj.GenerateResource.Cache
