@@ -7,3 +7,13 @@ c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug
 c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\bin\Debug\JINGJING.pdb
 c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.exe
 c:\users\yaowa\documents\visual studio 2013\Projects\JINGJING\JINGJING\obj\Debug\JINGJING.pdb
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\bin\Debug\JINGJING.exe.config
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\bin\Debug\JINGJING.exe
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\bin\Debug\JINGJING.pdb
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.csprojAssemblyReference.cache
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.main.resources
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.Properties.Resources.resources
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.csproj.GenerateResource.cache
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.csproj.CoreCompileInputs.cache
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.exe
+E:\代码\Mutual-Incentive\mag_exercise\JINGJING\obj\Debug\JINGJING.pdb
