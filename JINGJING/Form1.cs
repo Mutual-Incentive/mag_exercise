@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading;
 
 namespace JINGJING
 {
     public partial class main : Form
     {
+        /// <summary>
+        /// 后台线程
+        /// </summary>
+        Thread PThread;
+        
         public main()
         {
             InitializeComponent();
@@ -70,5 +76,44 @@ namespace JINGJING
         {
 
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        #region 线程初始化
+        private void InitThread()
+        {
+            try
+            {
+                PThread = new Thread(
+                    ()=>
+                    {
+                        while (true)
+                        {
+                            this.Invoke(
+                                (MethodInvoker)delegate ()
+                                {                                    
+                                      this.BeginInvoke((Action)(()=>
+                                      {
+                                          backgroundWorker1.RunWorkerAsync();
+                                      }));                                    
+                                }
+                                );
+                            Thread.Sleep(1000);//sleep1s
+                        }
+                    }
+                    );
+                PThread.Priority = ThreadPriority.Highest;//优先级设为最高
+                PThread.IsBackground = true;//属性设置为后台线程
+                PThread.Start();//线程启动
+            }
+            catch(Exception ex)
+            {
+                return;
+            }
+        }
+        #endregion
     }
 }
