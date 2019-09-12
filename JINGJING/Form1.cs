@@ -14,11 +14,18 @@ namespace JINGJING
 {
     public partial class main : Form
     {
+        #region 变量初始化
         /// <summary>
         /// 后台线程
         /// </summary>
         Thread PThread;
-        
+
+        /// <summary>
+        /// 波形串口
+        /// </summary>
+        SerialPort WavePort = new SerialPort();
+        #endregion
+
         public main()
         {
             InitializeComponent();
@@ -26,19 +33,10 @@ namespace JINGJING
 
         private void 主界面_Load(object sender, EventArgs e)
         {
+            InitThread();//初始化线程
             comboBox_Baud_rate.DataSource = new[] { "125000", "360000", "251000" };
             string[] PortStr = SerialPort.GetPortNames();
             comboBox_select_port.DataSource =  PortStr; 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void button_ok_Click(object sender, EventArgs e)
@@ -51,35 +49,18 @@ namespace JINGJING
             {
                 MessageBox.Show("Wrong Password");
             }
-        }      
-        private void textbox_password_TextChanged(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        }    
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-
+            this.BeginInvoke((Action)(()=> {
+                //判断串口是否打开
+                if (WavePort.IsOpen)
+                {
+                    SaveData();
+                    PlotWave();
+                }
+            }));
         }
 
         #region 线程初始化
@@ -115,5 +96,48 @@ namespace JINGJING
             }
         }
         #endregion
+
+        #region 保存波形数据
+        /// <summary>
+        /// 保存波形数据
+        /// </summary>
+        private void SaveData()
+        {
+            try
+            {
+                int DataLength = WavePort.BytesToRead;//缓冲区中数据字节数
+                byte[] DataReceived = new byte[DataLength];//存放缓冲区数据
+                if (WavePort.Read(DataReceived, 0, DataLength) == 0) return;
+
+            }
+            catch(Exception ex)
+            {
+                return;
+            }
+        }
+        #endregion
+
+        #region 画波形图
+        /// <summary>
+        /// 画波形图
+        /// </summary>
+        private void PlotWave()
+        {
+            try
+            {
+
+            }
+            catch(Exception ex)
+            {
+                return;
+            }
+        }
+        #endregion
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            WavePort.PortName = comboBox_select_port.Text;
+            WavePort.BaudRate = int.Parse(comboBox_Baud_rate.Text);
+        }
     }
 }
